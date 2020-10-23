@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <p><h4>How many you wanted to pick for chekcout</h4>
     <form action="#" method="POST">
-        <p><input type='text' name='firstname' placeholder='FirstName' value="<?php echo"$_SESSION['name']"?>"></p>
+        <p><input type='text' name='firstname' placeholder='FirstName'></p>
         <p><input type='text' name='lastname' placeholder='LastName'></p>
         <p><input type='text' name='quantity' placeholder='quantity'></p>
         <p><input type='submit' value='CheckOut'>
