@@ -23,16 +23,38 @@
 <html>
 <head>
 <link rel="stylesheet" href="stylesheet.css"/>
+<style>
+    body{  
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
+}
+h1 {
+        display: inline-block;
+        width: 3em;
+        padding: 0.9em 0;
+        margin: 0.5em;
+        text-align: center;
+        }
+#wrapper{
+    border:1px solid black;
+    text-align:center;
+}
+ </style>
 </head>
 <body>
+        <div id="wrapper">
+<?php include "header.php"?>
+       
     <form action="main.php" method="POST">
-
+        <p><h3>Please login to access the inventory</h3></p>
         <p><input type="text" name="name" placeholder="name"></p>
-        <p><input type="text" name="pass" placeholder="password"></p>
+        <p><input type="password" name="pass" placeholder="password"></p>
         <p><input type="submit" value="submit"></p>
 
     </form>
+    </div>
 </body>
 
 </html>
